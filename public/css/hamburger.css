@@ -1,0 +1,53 @@
+/* hambuger menu */
+.icon{
+    top: inherit;
+    left: inherit;
+    position: absolute;
+    
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.hamburger{
+    position: absolute;
+    top: inherit;
+    left: inherit;
+    width: 30px;
+    height: 3px;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+.hamburger:before,
+.hamburger:after{
+    right: 0%;
+    content: '';
+    position: absolute;
+    top: inherit;
+    left: inherit;
+    width: 30px;
+    height: 3px;
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    transition: .5s;
+}
+.hamburger:before{
+    top: -8px;
+}
+.hamburger:after{
+    top: 8px;
+}
+.icon.active .hamburger{
+    background: rgba(0,0,0,0);
+    box-shadow: 0 2px 5px rgba(0,0,0,0); 
+}
+.icon.active .hamburger:before{
+    top: 0;
+    background: orange;
+    transform: rotate(45deg);
+}
+.icon.active .hamburger:after{
+    top: 0;
+    transform: rotate(135deg);
+    background: orange;
+}
+/* hamburger menu ends */

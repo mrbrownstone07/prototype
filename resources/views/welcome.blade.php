@@ -7,6 +7,10 @@
         <title>Laravel</title>
 
         <!-- Fonts -->
+        <link rel="dns-prefetch" href="//fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
@@ -18,6 +22,10 @@
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
+            }
+
+            .bg-trans{
+                background-color: rgba(0, 0, 0, 0) !m;
             }
 
             .full-height {

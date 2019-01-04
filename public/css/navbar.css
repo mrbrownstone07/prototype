@@ -1,0 +1,38 @@
+.main-nav-item{
+    font-family: 'Julius Sans One', sans-serif !important;
+    font-weight: bolder;
+    -webkit-transition: margin-top 1s;
+    transition: margin-top 1s;
+}
+
+.main-nav-item :hover{
+    margin-top: -5px;
+    transition: 1s;
+}
+
+.nav-link{
+    color: bisque !important;
+}
+
+.navbar-brand{
+    /* font-family: 'Stalemate', cursive; */
+    color: bisque !important;
+    /* font-size: 30px; */
+}
+
+#nav.bg-transparent{
+    transition: .50s !important;
+}
+
+#nav.bg-dark{
+    transition: .50s !important;
+}
+
+#nav.shadow-lg{
+    box-shadow: #ffffff !important;
+}
+
+.hr.divider{
+    margin: 0px;
+    padding: 0px;
+}
