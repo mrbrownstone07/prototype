@@ -15,9 +15,17 @@
 }
 
 .navbar-brand{
-    /* font-family: 'Stalemate', cursive; */
-    color: bisque !important;
+    font-family: 'Stalemate', cursive;
+    
     /* font-size: 30px; */
+}
+.navbar-brand.show{
+    color:crimson !important;
+    transition: .50s;
+}
+.navbar-brand.hide{
+    color: rgba(0,0,0,0);
+    transition: .50s;
 }
 
 #nav.bg-transparent{

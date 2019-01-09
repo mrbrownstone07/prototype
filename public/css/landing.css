@@ -2,6 +2,43 @@
     font-family: 'Stalemate', cursive;
     font-size: 50px;
 }
+
+.img-div{
+    background-image: url("/imgs/3.jpg") !important;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.img-div-next{
+    background-image: url("/imgs/3.jpg") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 90%; 
+}
+
+.logo-letter{
+    font-family: 'Stalemate', cursive;
+    font-size: 200px;
+}
+.logo-letter.show{
+    color: crimson;
+    transition: .50s;
+}
+
+.logo-letter.hide{
+    color: rgba(0,0,0,0);
+    transition: .50s;
+}
+
+.angle-div{
+    clip-path: polygon(0 0, 100% 0,  100% calc(100% - 10vh), 0 100%)
+}
+
 .logo{
     font-family: 'Stalemate', cursive;
     font-size: 50px;
@@ -9,4 +46,62 @@
 
 .style_font{
     font-family: 'Julius Sans One', sans-serif !important;
+}
+
+#footbar.hide{
+    display: none;
+}
+
+#footbar.show{
+    display: block;
+}
+
+.icon{
+    top: inherit;
+    left: inherit;
+    position: absolute;
+    
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.hamburger{
+    position: absolute;
+    top: inherit;
+    left: inherit;
+    width: 30px;
+    height: 3px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0);
+    box-shadow: 0 2px 5px rgba(0,0,0,0);
+}
+.hamburger:before,
+.hamburger:after{
+    right: 0%;
+    content: '';
+    position: absolute;
+    top: inherit;
+    left: inherit;
+    width: 30px;
+    height: 10px;
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    transition: .5s;
+}
+.hamburger:before{
+    top: 0;
+    background: crimson;
+    transform: rotate(45deg);
+}
+.hamburger:after{
+    top: 15;
+    transform: rotate(-45deg);
+    background: crimson;
+}
+
+.icon :hover.hamburger:after{
+    background: whitesmoke;
+}
+
+.icon :hover.hamburger:before{
+    background: whitesmoke;
 }

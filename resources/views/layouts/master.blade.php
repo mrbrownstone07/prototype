@@ -9,13 +9,15 @@
 
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
+        <script src="{{ asset('js/master.js') }}" defer></script>
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
 
         <!-- Stylesheet -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         {{-- <link href="{{ asset('css/hamburger.css') }}" rel="stylesheet"> --}}
         <link href="{{ asset('css/master.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/landing.css') }}" rel="stylesheet"> 
+        
 
         <!-- App Name -->
         <title>{{config('app.name'), 'Prototype'}}</title>
@@ -29,19 +31,7 @@
         <link href='https://fonts.googleapis.com/css?family=Julius+Sans+One:400' rel='stylesheet' type='text/css'>
 
         <script>
-            $(document).ready(function(){
-                $('.icon').click(function(){
-                    console.log('click')
-                    $('.icon').toggleClass('active');
-                    $('#menu').fadeIn(3000, function(){
-                        $('#menu').toggleClass("bg-inactive");
-                        $('#menu').toggleClass("bg-active");
-                        $('#banner').toggleClass("hide");
-                        $('#_navbar').toggleClass("hide");
-                        $('#_navbar').toggleClass("show");
-                    });
-                });
-            });
+
         </script>
         
     </head>
